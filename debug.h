@@ -101,5 +101,5 @@ void __dbg(const char* names, const T& val, const Rest&... rest) {
     __dbg(comma ? comma + 1 : "", rest...);
 }
 
-#define dg(...) cerr << "[" << __LINE__ << "]", __dbg(#__VA_ARGS__, __VA_ARGS__)
+#define dbg(...) cerr << "[" << __LINE__ << "]", __dbg(#__VA_ARGS__, __VA_ARGS__)
 
