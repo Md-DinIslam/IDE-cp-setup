@@ -32,5 +32,5 @@ void __db(const char* n, T v, R...r){
     cerr<<string(n,c?c-n:strlen(n))<<" = "; __p(v); cerr<<" | ";
     __db(c?c+1:"",r...);
 }
-#define dg(...) cerr << "[" << __LINE__ << "] ",__db(#__VA_ARGS__,__VA_ARGS__)
+#define dbg(...) cerr << "[" << __LINE__ << "] ",__db(#__VA_ARGS__,__VA_ARGS__)
 
